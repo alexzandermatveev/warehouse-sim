@@ -32,9 +32,7 @@ public class Cargo implements Cloneable {
     @Override
     public Cargo clone() {
         try {
-            Cargo clone = (Cargo) super.clone();
-            // TODO: copy mutable state here, so the clone can't change the internals of the original
-            return clone;
+            return (Cargo) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
